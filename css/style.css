@@ -34,7 +34,7 @@ body {
 	font-size: 16px;
 }
 
-.about #settings {
+#settings {
 	color: #a88e66;
 }
 
@@ -42,6 +42,55 @@ body {
 	background: #464b51;
 	position: relative;
 	top: -10px;
+}
+
+.consulting {
+	background: #fff;
+	color: #000;
+}
+
+.consulting span:nth-child(3) {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.consulting .call {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: solid 5px #fff;
+    animation: play 2s ease infinite;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.consulting .call img {
+	width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+@keyframes play {
+    0% { color: rgb(104, 188, 119);
+    	color: rgba(177, 220, 185, 0.4);
+        transform: scale(1);
+    }
+    15% {
+        box-shadow: 0 0 0 5px rgba(104, 188, 119, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgba(104, 188, 119, 0.4), 0 0 0 20px rgba(104, 188, 119, 0.2);
+    }
+    25% {
+        box-shadow: 0 0 0 15px rgba(104, 188, 119, 0.4), 0 0 0 30px rgba(104, 188, 119, 0.2);
+    }
 }
 
 footer {
