@@ -1,3 +1,66 @@
-/*header {
-	background: url(../img/headerBG-1.jpg) no-repeat;
-}*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #1d242c;
+	color: #fff;
+}
+
+.about {
+
+}
+
+.about h1 {
+	font-size: 35px;
+}
+
+.about .date {
+	font-size: 14px;
+}
+
+.about .news-1,
+.about .news-2,
+.about .news-3 {
+	font-size: 16px;
+}
+
+.about .title {
+	font-size: 24px;
+}
+
+.about span {
+	font-size: 16px;
+}
+
+.about #settings {
+	color: #a88e66;
+}
+
+.about .cams {
+	background: #464b51;
+	position: relative;
+	top: -10px;
+}
+
+footer {
+	/*background-color: #1d242c;*/
+	color: #fff;
+}
+
+footer h3,
+footer h4 {
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+footer .title {
+	color: #fff;
+	font-size: 18px;
+}
+
+footer .description {
+	color: #7f8388;
+	font-size: 16px;
+}
