@@ -54,6 +54,7 @@ nav a:hover {
 	top: -65px;
 	background: rgba(70, 75, 81, 0.78);
 	border-radius: 15px;
+	font-size: 16px;
 }
 
 .prevNext i {
@@ -68,6 +69,17 @@ nav a:hover {
 .logo {
 	position: absolute;
 	z-index: 1;
+	background: #1d242c;
+}
+
+.logo .operator {
+	cursor: pointer;
+}
+
+.logo .operator:hover {
+	transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
 }
 
 .about h1 {
@@ -225,4 +237,28 @@ footer .title {
 footer .description {
 	color: #7f8388;
 	font-size: 16px;
+}
+
+@media only screen and (max-width: 963px) {
+  	.prevNext {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 773px) {
+  	.prevNext {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (max-width: 631px) {
+  	.prevNext {
+		font-size: 6px;
+	}
+}
+
+@media only screen and (max-width: 488px) {
+  	.prevNext {
+		font-size: 5px;
+	}
 }
