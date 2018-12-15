@@ -202,6 +202,10 @@ nav a:hover {
 	z-index: 2;
 }
 
+.carousel .prevNexts {
+	text-transform: uppercase;
+}
+
 footer {
 	/*background-color: #1d242c;*/
 	color: #fff;

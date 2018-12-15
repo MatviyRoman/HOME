@@ -5,14 +5,38 @@ $(document).ready(function(){
 	});
 });
 
+$(window).on('load', function(){
+	$('.operator').click(function(){
+		$('.consulting').toggle();
+	});
+});
+
 $('#bannerSlide').carousel({
   	interval: 2000
 });
 
 $(document).ready(function(){
-    $('.project-2').trigger('hover');
-    $('.project-2').trigger('mouseenter');
-    $('.project-2').trigger('mouseover');
+	$('.project-1').trigger('hover');
+    $('.project-1').trigger('mouseenter');
+    $('.project-1').trigger('mouseover');
+});
+
+$(document).ready(function(){
+	$('.project-2').trigger('hover');
+	$('.project-2').trigger('mouseenter');
+	$('.project-2').trigger('mouseover');
+});
+
+$(document).ready(function(){
+	$('.project-3').trigger('hover');
+    $('.project-3').trigger('mouseenter');
+    $('.project-3').trigger('mouseover');
+});
+
+$(document).ready(function(){
+	$('.project-4').trigger('hover');
+    $('.project-4').trigger('mouseenter');
+    $('.project-4').trigger('mouseover');
 });
 
 $(document).ready(function(){
