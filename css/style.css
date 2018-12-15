@@ -3,6 +3,17 @@
 	padding: 0;
 }
 
+.no-gutters {
+  	margin-right: 0;
+  	margin-left: 0;
+
+  	> .col,
+  	> [class*="col-"] {
+    	padding-right: 0;
+    	padding-left: 0;
+  	}
+}
+
 body {
 	background-color: #1d242c;
 	color: #fff;
@@ -30,21 +41,33 @@ nav .disabled:hover {
 nav .active,
 nav a:hover {
 	color: #caa977;
-	border-bottom: 1px solid #caa977;
+	border-bottom: 5px solid #caa977;
 }
 
 .a5 {
 	position: absolute;
-	/*z-index: 1;*/
+	z-index: 1;
+}
+
+.prevNext {
+	position: relative;
+	top: -65px;
+	background: rgba(70, 75, 81, 0.78);
+	border-radius: 15px;
+}
+
+.prevNext i {
+	color: #6c6f74;
+}
+
+.prevNext a {
+	color: #fff;
+	text-decoration: none
 }
 
 .logo {
 	position: absolute;
 	z-index: 1;
-}
-
-.about {
-
 }
 
 .about h1 {
@@ -73,6 +96,18 @@ nav a:hover {
 	color: #a88e66;
 }
 
+#settings .absolute {
+	position: absolute;
+}
+
+#settings .relative {
+	position: relative;
+}
+
+#settings .fixed {
+	position: fixed;
+}
+
 .about .cams {
 	background: #464b51;
 	position: relative;
@@ -80,9 +115,11 @@ nav a:hover {
 }
 
 .consulting {
+	position: absolute;
 	display: none;
 	background: #fff;
 	color: #000;
+	z-index: 33;
 }
 
 .consulting span:nth-child(3) {
@@ -113,6 +150,11 @@ nav a:hover {
     top: 0px;
 }
 
+#projectSlide .card-deck .card {
+	border: none;
+	margin: 0;
+}
+
 @keyframes play {
     0% { color: rgb(104, 188, 119);
     	color: rgba(177, 220, 185, 0.4);
@@ -127,6 +169,37 @@ nav a:hover {
     25% {
         box-shadow: 0 0 0 15px rgba(104, 188, 119, 0.4), 0 0 0 30px rgba(104, 188, 119, 0.2);
     }
+}
+
+.carousel .title {
+	position: absolute;
+	z-index: 1;
+}
+
+.carousel .ellipse-1,
+.carousel .ellipse-2,
+.carousel .ellipse-3,
+.carousel .ellipse-4 {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(202, 169, 119, 0.84);
+	border-radius: 100%;
+	width: 145px;
+	height: 145px;
+}
+
+.carousel .ellipse-1 img,
+.carousel .ellipse-2 img,
+.carousel .ellipse-3 img,
+.carousel .ellipse-4 img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
 }
 
 footer {
