@@ -39,30 +39,82 @@ $('#bannerSlide').carousel({
 //     $('.project-4').trigger('mouseover');
 // });
 
+// $(document).ready(function(){
+//   	$(".project-1").hover(function(){
+//     	$(".ellipse-1").css("display", "block");
+//     	}, function(){
+//     	$(".ellipse-1").css("display", "none");
+//   	});
+//   	$(".project-2").hover(function(){
+//     	$(".ellipse-2").css("display", "block");
+//     	}, function(){
+//     	$(".ellipse-2").css("display", "none");
+//   	});
+//   	$(".project-3").hover(function(){
+//     	$(".ellipse-3").css("display", "block");
+//     	}, function(){
+//     	$(".ellipse-3").css("display", "none");
+//   	});
+//   	$(".project-4").hover(function(){
+//     	$(".ellipse-4").css("display", "block");
+//     	}, function(){
+//     	$(".ellipse-4").css("display", "none");
+//   	});
+// });
+
+
 $(document).ready(function(){
   	$(".project-1").hover(function(){
-  		$('.project-1').trigger('hover');
-    	$('.project-1').trigger('mouseenter');
-   		$('.project-1').trigger('mouseover');
     	$(".ellipse-1").css("display", "block");
-    	}, function(){
-    	$(".ellipse-1").css("display", "none");
-  	});
-  	$(".project-2").hover(function(){
-    	$(".ellipse-2").css("display", "block");
-    	}, function(){
     	$(".ellipse-2").css("display", "none");
-  	});
-  	$(".project-3").hover(function(){
-    	$(".ellipse-3").css("display", "block");
-    	}, function(){
     	$(".ellipse-3").css("display", "none");
-  	});
-  	$(".project-4").hover(function(){
-    	$(".ellipse-4").css("display", "block");
-    	}, function(){
     	$(".ellipse-4").css("display", "none");
-  	});
+    	});
+  	$(".project-2").hover(function(){
+    	$(".ellipse-1").css("display", "none");
+    	$(".ellipse-2").css("display", "block");
+    	$(".ellipse-3").css("display", "none");
+    	$(".ellipse-4").css("display", "none");
+    	});
+  	$(".project-3").hover(function(){
+    	$(".ellipse-1").css("display", "none");
+    	$(".ellipse-2").css("display", "none");
+    	$(".ellipse-3").css("display", "block");
+    	$(".ellipse-4").css("display", "none");
+    	});
+  	$(".project-4").hover(function(){
+    	$(".ellipse-1").css("display", "none");
+    	$(".ellipse-2").css("display", "none");
+    	$(".ellipse-3").css("display", "none");
+    	$(".ellipse-4").css("display", "block");
+    	});
+});
+
+$(document).ready(function(){
+  	$(".ellipse-1").click(function(){
+    	$(".project-1").css("transform", "scale(1,2)");
+    	$(".project-2").css("transform", "none");
+    	$(".project-3").css("transform", "none");
+    	$(".project-4").css("transform", "none");
+    	});
+  	$(".ellipse-2").click(function(){
+    	$(".project-1").css("transform", "none");
+    	$(".project-2").css("transform", "scale(1,2)");
+    	$(".project-3").css("transform", "none");
+    	$(".project-4").css("transform", "none");
+    	});
+  	$(".ellipse-3").click(function(){
+    	$(".project-1").css("transform", "none");
+    	$(".project-2").css("transform", "none");
+    	$(".project-3").css("transform", "scale(1,2)");
+    	$(".project-4").css("transform", "none");
+    	});
+  	$(".ellipse-4").click(function(){
+    	$(".project-1").css("transform", "none");
+    	$(".project-2").css("transform", "none");
+    	$(".project-3").css("transform", "none");
+    	$(".project-4").css("transform", "scale(1,2)");
+    	});
 });
 
 

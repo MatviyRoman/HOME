@@ -20,10 +20,10 @@
     <header>
         <div class="container-fluid">
             <div class="row justify-content-start">
-                <nav class="col-10 offset-2 pl-5">
-                    <ul class="nav pl-5">
-                        <li class="nav-item pl-5 mr-4">
-                            <a class="nav-link disabled  pt-3 pb-3" href="#">+38 (067) 483 77 58</a>
+                <nav class="col-10 offset-md-2 offset-1 pl-xl-5 pl-lg-4 pl-md-3 pl-sm-3 pl-3">
+                    <ul class="nav pl-md-5 pl-sm-2 pl-3">
+                        <li class="nav-item pl-5 mr-lg-4 mr-md-2 mr-sm-2 mr-1">
+                            <a class="nav-link disabled pb-3 pt-3">+38 (067) 483 77 58</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active pt-3 pb-3" href="#">ІННОВАЦІЇ</a>
@@ -43,9 +43,9 @@
                     </ul>
                 </nav>
                 <div class="logo col-3">
-                	<img src="img/logo.png" alt="logo" class="col-3 img-fluid">
+                	<img src="img/logo.png" alt="logo" class="img-fluid">
                 	<div class="w-100"></div>
-                	<img src="img/ico.png" alt="operator" class="col-1 operator img-fluid">
+                	<img src="img/ico.png" alt="operator" class="operator img-fluid">
                 	<div class="w-100"></div>
                 	<img src="img/logo-line.png" alt="line" class="m-4 img-fluid">
                 	<div class="w-100"></div>
@@ -144,7 +144,7 @@
                         Друга секція ЖК «Дольче Віта» перейшла в фазу проектного погодження.
                     </div>
                 </div>
-                <div class="cams col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 p-4">
+                <div class="cams col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pt-4 pl-4 pr-4">
                     <div class="title mb-4">
                         ВЕБ-КАМЕРА
                     </div>
@@ -152,19 +152,19 @@
                     	<img src="img/webcam.png" alt="webcam" class="img-fluid">
                     </div>
                     <div class="w-100 mb-4"></div>
-                    <span class="mb-5">
+                    <span>
                         Переглядайте за ходом роботи над будинком Вашої мрії через веб-камеру
                     </span>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            5th Avenue (2 секція)
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+                    <div class="w-100 mb-4"></div>
+                    <div class="box">
+	                    <select class="box p-2">
+						  	<option value="1"><span>5th Avenue (1 секція)</span></option>
+						  	<option value="2"><span>5th Avenue (2 секція)</span></option>
+						  	<option value="3"><span>DOLCE VITA (1 секція)</span></option>
+						  	<option value="4"><span>DOLCE VITA (2 секція)</span></option>
+						</select>
+					</div>
+					<button class="btn badge-pill ml-4" id="settings-bg" type="button">З’ЄДНАТИ</button>
                 </div>
             </div>
         </div>
@@ -352,53 +352,62 @@
                 </div>
                 <div class="w-100 mb-5"></div>
                 <h4>Залишились питання?</h4>
-                <div class="w-100 mb-5"></div>
-                <div class="row justify-content-between">
-                    <div class="question-1">
-                        <span>ВІДДІЛ ПРОДАЖУ:</span>
-                        <div class="w-100"></div>
-                        <span>м. Львів, вул. Липинського, 36</span>
-                        <div class="w-100"></div>
-                        <span>Email: info@a5.lviv.ua</span>
-                        <div class="w-100"></div>
-                        <span>Тел.: +38 (067) 483 77 58</span>
-                    </div>
-                    <div class="question-2 offsset-3">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-3">
-                                    <input type="text" class="form-control" id="inputName" placeholder="Ім’я">
+            </div>
+            <div class="w-100 mb-5"></div>
+            <div class="row justify-content-around">
+                <div class="question-1 col-2">
+                    <span>ВІДДІЛ ПРОДАЖУ:</span>
+                    <div class="w-100"></div>
+                    <span>м. Львів, вул. Липинського, 36</span>
+                    <div class="w-100"></div>
+                    <span>Email: info@a5.lviv.ua</span>
+                    <div class="w-100"></div>
+                    <span>Тел.: +38 (067) 483 77 58</span>
+                </div>
+                <div class="question-2 col-10">
+                	<!-- <div class="row"> -->
+	                    <form>
+	                        <div class="form-row">
+	                            <div class="form-group col-md-2">
+	                                <input type="text" class="form-control" id="inputName" placeholder="Ім’я">
+	                            </div>
+	                            <div class="form-group col-md-2">
+	                                <input type="number" class="form-control" id="inputNumber" placeholder="Телефон">
+	                            </div>
+	                            <div class="w-100"></div>
+	                            <div class="form-group col-md-2">
+	                                <input type="email" class="form-control" id="inputEmail4" placeholder="Емейл">
+	                            </div>
+                                <div class="form-group col-md-2">
+                                    <input type="text" class="form-control" id="inputCity" placeholder="finansovi">
                                 </div>
-                                <div class="form-group col-md-3">
-                                    <input type="number" class="form-control" id="inputNumber" placeholder="Телефон">
-                                </div>
-                                <div class="w-100"></div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Емейл">
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-stretch">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="inputMessage" placeholder="Зміст повідомлення">
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="inputCity">
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="rounded-100 btn btn-primary p-3">
-                                Надіслати
-                                <i class="pl-2 fas fa-arrow-right"></i>
-                            </button>
-                        </form>
-                    </div>
+                            <!-- </div> -->
+                            <!-- <div class="form-row"> -->
+		                        <!-- <div class="d-flex align-items-stretch"> -->
+		                            <div class="form-group col-md-3">
+		                                <input type="text" class="form-control" id="inputMessage" placeholder="Зміст повідомлення">
+		                                <!-- <div class="row justify-content-end"> -->
+			                                <button type="submit" class="offset-6 rounded-100 btn btn-primary">
+			                            		Надіслати
+			                            		<i class="pl-2 fas fa-arrow-right"></i>
+			                        		</button>
+			                        	<!-- </div> -->
+		                            </div>
+		                        <!-- </div> -->
+		                        <div class="w-100"></div>
+		                        <button type="submit" class="rounded-100 btn btn-primary">
+		                            Надіслати
+		                            <i class="pl-2 fas fa-arrow-right"></i>
+		                        </button>
+		                    </div>
+	                    </form>
+                	<!-- </div> -->
                 </div>
             </div>
         </div>
         <div class="end mt-5 pb-5">
             <div class="container">
-                <div class="row justify-content-center justify-content-between">
+                <div class="row justify-content-between">
                     <img src="img/logo.jpg" class="img-fluid" alt="logo">
                     <div class="col-5 offset-1">
                         <div class="row justify-content-center">
