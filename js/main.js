@@ -11,6 +11,12 @@ $(window).on('load', function(){
 	});
 });
 
+$(window).on('load', function(){
+	$('.callMe, #yes, #no').click(function(){
+		$('.modalCall').toggle();
+	});
+});
+
 $('#bannerSlide').carousel({
   	interval: 2000
 });

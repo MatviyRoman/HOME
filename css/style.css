@@ -75,6 +75,14 @@ nav .active {
 	position: absolute;
 	max-height: 1001px;
 	z-index: 1;
+	/*background: #1d242c;*/
+}
+
+.logoGlobal {
+	background: #1d242c;
+}
+
+.logo .pic {
 	background: #1d242c;
 }
 
@@ -183,11 +191,14 @@ nav .active {
 }
 
 .consulting {
-	position: absolute;
-	display: none;
-	background: #fff;
-	color: #000;
-	z-index: 33;
+    position: absolute;
+    top: 300px;
+    width: 230px;
+    left: 28px;
+     display: none; 
+    background: #fff;
+    color: #000;
+    z-index: 33;
 }
 
 .consulting span:nth-child(3) {
@@ -208,6 +219,7 @@ nav .active {
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
+    cursor: pointer;
 }
 
 .consulting .call img {
@@ -216,6 +228,27 @@ nav .active {
     position: absolute;
     left: 0px;
     top: 0px;
+}
+
+.modalCall {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(70, 75, 81, 0.9);
+	color: #bab3b2;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	z-index: 777;
+}
+
+.modalCall #yes:hover {
+	background-color: rgba(0, 128, 0, 1);
+}
+
+.modalCall #no:hover {
+	background-color: rgba(255, 0, 0, 1);
 }
 
 #projectSlide .card-deck .card {
@@ -295,6 +328,51 @@ footer .description {
 	color: #7f8388;
 	font-size: 16px;
 }
+
+footer input {
+	background: #464B51;
+	border: #464B51;
+	color: #fff !important;
+	/*display: inline-block;
+	height: 125px;*/
+}
+
+footer .dropdown-toggle,
+footer .dropdown-menu {
+	color: #fff;
+}
+
+footer .dropdown-toggle::after {
+    border-top: .3em solid #C6A47E;
+}
+
+/*footer .drop {
+	background-color: #464B51 !important;
+}*/
+
+footer textarea {
+	resize: none;
+	background: #464B51;
+	border: #464B51;
+}
+
+footer button,
+footer button:hover {
+	background-color: #C6A47E !important;
+	border-color: #C6A47E;
+}
+
+.end {
+	color: #8c8c8c;
+	font-size: 12px;
+}
+
+.end .innovation {
+	color: #8c8c8c;
+	font-size: 14px;
+}
+
+
 
 @media only screen and (max-width: 963px) {
   	.prevNext {
