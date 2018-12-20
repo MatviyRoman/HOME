@@ -14,15 +14,16 @@
   	}
 }
 
-body {
+/*body {
 	background-color: #1d242c;
 	color: #fff;
-}
+}*/
 
 nav {
-	position: absolute;
+	/*position: absolute;*/
+	position: relative;
 	font-size: 14px;
-	background: rgba(29, 36, 44, 0.8);
+	background: rgba(29, 36, 44, 0.8) !important;
 	z-index: 1;
 }
 
@@ -74,7 +75,7 @@ nav .active {
 .logo {
 	position: absolute;
 	max-height: 1001px;
-	z-index: 1;
+	z-index: 2;
 	/*background: #1d242c;*/
 }
 
@@ -90,11 +91,20 @@ nav .active {
 	cursor: pointer;
 }
 
+img.logoArrow {
+     position: absolute;
+}
+
 /*.logo .operator:hover {
 	transform: scale(1, 1);
 	-ms-transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
 }*/
+
+.about {
+	background: #1d242c;
+	color: #fff;
+}
 
 .about h1 {
 	font-size: 35px;
@@ -170,6 +180,15 @@ nav .active {
 	color: #a88e66;
 }
 
+.about a#dropdownMenuLink {
+    background-color: #fff;
+    color: #000;
+}
+
+.about .dropdown-toggle::after {
+    border-top: .3em solid #a88e66;
+}
+
 #settings {
 	color: #a88e66;
 }
@@ -191,11 +210,7 @@ nav .active {
 }
 
 .consulting {
-    position: absolute;
-    top: 300px;
-    width: 230px;
-    left: 28px;
-     display: none; 
+    display: none;
     background: #fff;
     color: #000;
     z-index: 33;
@@ -346,9 +361,15 @@ footer .dropdown-toggle::after {
     border-top: .3em solid #C6A47E;
 }
 
-/*footer .drop {
+footer .drop {
 	background-color: #464B51 !important;
-}*/
+	width: 100%;
+}
+
+footer .drop a {
+	text-decoration: none;
+	width: 100%;
+}
 
 footer textarea {
 	resize: none;
@@ -398,7 +419,7 @@ footer button:hover {
 	}
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   	nav,
   	nav .disabled,
   	nav .disabled:hover {
