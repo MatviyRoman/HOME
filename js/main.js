@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  	$('ul li a').click(function(){
-    	$('li a').removeClass("active");
+  	$('.links a').click(function(){
+    	$('.links a').removeClass("active");
     	$(this).addClass("active");
 	});
 });
@@ -22,52 +22,10 @@ $('#bannerSlide').carousel({
 });
 
 // $(document).ready(function(){
-// 	$('.project-1').trigger('hover');
-//     $('.project-1').trigger('mouseenter');
-//     $('.project-1').trigger('mouseover');
-// });
-
-// $(document).ready(function(){
 // 	$('.project-2').trigger('hover');
-// 	$('.project-2').trigger('mouseenter');
-// 	$('.project-2').trigger('mouseover');
+//     $('.project-2').trigger('mouseenter');
+//     $('.project-2').trigger('mouseover');
 // });
-
-// $(document).ready(function(){
-// 	$('.project-3').trigger('hover');
-//     $('.project-3').trigger('mouseenter');
-//     $('.project-3').trigger('mouseover');
-// });
-
-// $(document).ready(function(){
-// 	$('.project-4').trigger('hover');
-//     $('.project-4').trigger('mouseenter');
-//     $('.project-4').trigger('mouseover');
-// });
-
-// $(document).ready(function(){
-//   	$(".project-1").hover(function(){
-//     	$(".ellipse-1").css("display", "block");
-//     	}, function(){
-//     	$(".ellipse-1").css("display", "none");
-//   	});
-//   	$(".project-2").hover(function(){
-//     	$(".ellipse-2").css("display", "block");
-//     	}, function(){
-//     	$(".ellipse-2").css("display", "none");
-//   	});
-//   	$(".project-3").hover(function(){
-//     	$(".ellipse-3").css("display", "block");
-//     	}, function(){
-//     	$(".ellipse-3").css("display", "none");
-//   	});
-//   	$(".project-4").hover(function(){
-//     	$(".ellipse-4").css("display", "block");
-//     	}, function(){
-//     	$(".ellipse-4").css("display", "none");
-//   	});
-// });
-
 
 $(document).ready(function(){
   	$(".project-1").hover(function(){
@@ -122,46 +80,3 @@ $(document).ready(function(){
     	$(".project-4").css("transform", "scale(1,2)");
     	});
 });
-
-
-// $('#carousel').on('slide.bs.carousel', function (e) {
-
-  
-//     var $e = $(e.relatedTarget);
-//     var idx = $e.index();
-//     var itemsPerSlide = 4;
-//     var totalItems = $('.carousel-item').length;
-    
-//     if (idx >= totalItems-(itemsPerSlide-1)) {
-//         var it = itemsPerSlide - (totalItems - idx);
-//         for (var i=0; i<it; i++) {
-//             // append slides to end
-//             if (e.direction=="left") {
-//                 $('.carousel-item').eq(i).appendTo('.carousel-inner');
-//             }
-//             else {
-//                 $('.carousel-item').eq(0).appendTo('.carousel-inner');
-//             }
-//         }
-//     }
-// });
-
-
-//   $('#carouselExample').carousel({ 
-//                 interval: 2000
-//         });
-
-
-//   $(document).ready(function() {
-// /* show lightbox when clicking a thumbnail */
-//     $('a.thumb').click(function(event){
-//       event.preventDefault();
-//       var content = $('.modal-body');
-//       content.empty();
-//         var title = $(this).attr("title");
-//         $('.modal-title').html(title);
-//         content.html($(this).html());
-//         $(".modal-profile").modal({show:true});
-//     });
-
-//   });
